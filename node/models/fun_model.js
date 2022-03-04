@@ -3,7 +3,7 @@ const {ModeloPelícula} = require('./models');
 //La función para mostrar todas las instancias
 //select*from table
 
-const getAllMovies = async8req,res)=>{
+const getAllMovies = async(req,res)=>{
   try{
     const Películas = await ModeloPelícula.findAll();
     res.json(Películas);
